@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+:root {
+  --color1: hsl(0, 0%, 100%);
+  --color2: hsla(217, 12%, 63%, 0.473);
+  --color3: hsla(216, 12%, 54%, 0.203);
+  --color4: hsl(213, 19%, 18%);
+  --color5: hsl(216, 12%, 8%);
+  --color6: hsl(25, 97%, 53%);
+}
+body {
+  font-size: 15px;
+  background-color: var(--color5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-rows: 0.7fr 1fr 0.8fr 0.8fr;
+  max-width: 25rem;
+  max-height: 25rem;
+  background-color: var(--color4);
+  gap: 0.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.favicon {
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  background-color: var(--color3);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+}
+.message {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.message h2 {
+  color: var(--color1);
+  align-self: flex-start;
+  font-family: "Overpass", sans-serif;
+}
+.message span {
+  color: var(--color2);
+}
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+.numbers span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color3);
+  border-radius: 100rem;
+  line-height: 1.6rem;
+  height: 45px;
+  width: 45px;
+  color: var(--color2);
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit button {
+  background-color: var(--color6);
+  width: 90%;
+  height: 50%;
+  border: none;
+  border-radius: 5rem;
+  color: var(--color1);
+  letter-spacing: 0.1rem;
+  font-size: 18px;
+}
+.thankYou {
+  display: none;
+}
+.submit button:hover {
+  background-color: var(--color1);
+  color: var(--color6);
+  cursor: pointer;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+.numbers span:hover {
+  background-color: var(--color6);
+  transition: background-color 0.5s;
+  color: var(--color1);
+  transition: color 0.5s;
+  cursor: pointer;
+}
